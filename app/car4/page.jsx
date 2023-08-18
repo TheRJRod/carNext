@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+import ParticlesContainer from '../Components/Particles'
 import React from 'react'
 import CarCard from '../Components/CarCard'
 import { useState } from 'react'
@@ -58,19 +58,20 @@ function Car4() {
     <>
     <AnimatePresence mode='wait'>
       <motion.form className='flex justify-center flex-col items-center gap-y-10'>
-        <input onChange={(e) => setSearch(e.target.value)} placeholder='Search Cars..' className='text-5xl rounded-full px-8 '/>
-          <div className='grid grid-cols-3 gap-10 '>
+        <input onChange={(e) => setSearch(e.target.value)} placeholder='Search Cars..' className='text-5xl rounded-full px-8 z-10 '/>
+          <div className='grid grid-cols-3 gap-10 z-10 '>
           
           {carData.filter((item) =>{
             return search.toLowerCase() === '' ? item : item.car.toLowerCase().includes(search)
           } ).map((car) =>  (
-            <CarCard page= {car.link} key={car.id} car={car.car} image={car.image} />
+            <CarCard  page= {car.link} key={car.id} car={car.car} image={car.image} />
           ))}
           </div>
-          <motion.div className='slide-in' initial={{scaleY: 0}} animate={{scaleY:0}} exit={{scaleY:1}} transition={{duration: 2, ease: [0.22, 1, 0.36, 1]}}>
+            <ParticlesContainer width='w-full' />
+          <motion.div className='slide-in z-20' initial={{scaleY: 0}} animate={{scaleY:0}} exit={{scaleY:1}} transition={{duration: 2, ease: [0.22, 1, 0.36, 1]}}>
 
         </motion.div>
-        <motion.div className='slide-out' initial={{scaleY: 1}} animate={{scaleY:0}} exit={{scaleY:0}} transition={{duration: 2, ease: [0.22, 1, 0.36, 1]}}>
+        <motion.div className='slide-out z-20' initial={{scaleY: 1}} animate={{scaleY:0}} exit={{scaleY:0}} transition={{duration: 2, ease: [0.22, 1, 0.36, 1]}}>
 
         </motion.div>
        
