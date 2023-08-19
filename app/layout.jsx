@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
     
     <html lang="en">
       
-      <body className={`${poppins.className} overflow-x-hidden overflow-y-hidden`} >
+      <body className={`${poppins.className} overflow-x-hidden `} >
         
         <Header/>
-       <main className='bg-OxfordBlue h-screen'>
+       <main className='bg-OxfordBlue h-screen		'>
         <Navigation/>
 
         {children}

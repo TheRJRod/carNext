@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Navigation = () => {
   return (
     <>
-    <div className='absolute right-8 bottom-1/2 text-2xl flex flex-col gap-y-6 text-white bg-black rounded-full px-2 py-6 z-10'>
+    <div className='sticky bottom-20  md:absolute md:right-8 md:bottom-1/2 text-lg md:text-2xl flex flex-row md:flex-col gap-y-6 justify-around text-white bg-black rounded-none md:rounded-full px-2 py-6 z-10'>
      <Link href='/'> <PiNumberCircleOneFill className='cursor-pointer hover:text-yellow-500'/></Link>
      <Link href='/car2'><PiNumberCircleTwoFill className='cursor-pointer hover:text-yellow-500'/></Link>
      <Link href='/car3'><PiNumberCircleThreeFill className='cursor-pointer hover:text-yellow-500'/></Link>

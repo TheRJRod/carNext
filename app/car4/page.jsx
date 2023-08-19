@@ -57,9 +57,9 @@ function Car4() {
   return (
     <>
     <AnimatePresence mode='wait'>
-      <motion.form className='flex justify-center flex-col items-center gap-y-10'>
-        <input onChange={(e) => setSearch(e.target.value)} placeholder='Search Cars..' className='text-5xl rounded-full px-8 z-10 '/>
-          <div className='grid grid-cols-3 gap-10 z-10 '>
+      <motion.form className='flex justify-center flex-col items-center gap-y-10 pt-10  bg-OxfordBlue'>
+        <input onChange={(e) => setSearch(e.target.value)} placeholder='Search Cars..' className='text-xl lg:text-5xl rounded-full px-8 z-10 '/>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 z-10 pb-20 md:pb-0'>
           
           {carData.filter((item) =>{
             return search.toLowerCase() === '' ? item : item.car.toLowerCase().includes(search)

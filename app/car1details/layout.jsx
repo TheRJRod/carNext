@@ -6,7 +6,7 @@ export default function Car1Layout({ children }) {
   return (
     <>
     <AnimatePresence mode='wait'>
-        <motion.div className='bg-gradient-to-r from-black from-20% to-OxfordBlue text-white h-screen '>
+        <motion.div className='bg-gradient-to-r from-black from-20% to-OxfordBlue text-white h-screen  '>
         
        
         {children}
