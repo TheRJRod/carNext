@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     
     <html lang="en">
       
-      <body className={`${poppins.className} overflow-x-hidden `} >
+      <body className={`${poppins.className} overflow-x-hidden wrapper`} >
         
         <Header/>
        <main className='bg-OxfordBlue h-screen		'>
