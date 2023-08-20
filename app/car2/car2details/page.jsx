@@ -47,7 +47,7 @@ const Car2Details = () => {
     <>
     <div className=' h-screen pt-14'>
       <div className='text-center pb-44 md:pb-60 text-2xl md:text-6xl'>
-      <h1 className='text-yellow-500 font-bold' >{lamboSpecs[sliderCounter].name}</h1>
+      <h1 className='text-yellow-500 font-bold text-3xl md:text-6xl' >{lamboSpecs[sliderCounter].name}</h1>
       <div className='flex flex-col md:flex-row text-2xl items-center text-center gap-4 justify-center pt-4'>
       <p className='text-white'>{lamboSpecs[sliderCounter].year} best in class</p>
         <div className='flex text-yellow-500'><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div>
