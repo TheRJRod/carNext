@@ -61,7 +61,7 @@ const Car2Details = () => {
     <BsFillArrowRightCircleFill onClick={() => handleSliderAdd()} className={`${sliderCounter >= 2 ? 'hidden' : ''} text-5xl cursor-pointer text-white	 hover:text-yellow-500 absolute right-1/3 top-[26rem] md:top-[20rem]`}/>
      </div>
       
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-y-4 absolute  -bottom-28 md:bottom-20  w-screen text-white text-center text-xl'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-y-4 absolute  -bottom-96 md:bottom-20  w-screen text-white text-center text-xl'>
         <div>
           <p><span className='text-5xl text-yellow-500'>{lamboSpecs[sliderCounter].speed}</span>MPH</p>
           <p>Top Speed</p>
