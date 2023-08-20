@@ -9,7 +9,7 @@ export default function Home() {
       <>
       <AnimatePresence  mode='wait'>
       
-      <motion.div className='flex flex-col px-20 gap-x-0 gap-y-20 md:gap-y-0 text-[14px] md:text-[16px] xl:flex-row justify-center xl:gap-x-32 pt-10 md:pt-32 items-center '>
+      <motion.div className='flex flex-col px-20 gap-x-0 gap-y-20 md:gap-y-0 text-[14px] md:text-[16px] xl:flex-row justify-center xl:gap-x-32 pt-10 md:pt-32 items-center bg-OxfordBlue'>
       <div className="flex flex-col  gap-y-4">
       <h1 className="text-4xl md:text-6xl text-white">YOUR CAR <br/> MADE BY <span className="text-yellow-500">THE FUTURE</span></h1>
       <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s</p>
